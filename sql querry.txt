@@ -1,0 +1,34 @@
+SELECT 
+	`request`.`req_id`,
+    `request`.`diajukan_oleh`,
+    `request`.`deskripsi_masalah`,
+    `request`.`created_at`,
+    `request`.`updated_at`,
+    `pic`.`pic_nama`,
+    `pic`.`pic_divisi`,
+    `kategori`.`kategori_nama`,
+    `prioritas`.`prioritas_nama`,
+    `status`.`stat_nama` 
+FROM 
+	`request` 
+JOIN 
+	`pic` 
+ON 
+	`pic`.`pic_id` = `request`.`pic_id` 
+LEFT JOIN 
+	`status`
+ON
+	`status`.`stat_id` = `request`.`stat_id` 
+LEFT JOIN
+	`kategori`
+ON
+	`kategori`.`kategori_id`=`request`.`kategori_id`
+LEFt JOIN
+	`prioritas`
+ON
+	`prioritas`.`prioritas_id` = `request`.`prioritas_id`
+  
+  table('request')->join('pic','request.pic_id','=','pic.pic_id')->join('status','request.stat_id','=','status.stat_id')->join('kategori','request.kategori_id','=','kategori.kategori_id')->join('prioritas','request.prioritas_id','=','prioritas.prioritas_id')
+  ->select('request.req_id','request.diajukan_oleh','request.deskripsi_masalah','request.created_at','request.updated_at','pic.pic_nama','pic.pic_divisi','kategori.kategori_nama','prioritas.prioritas_nama','status.stat_nama')->get()
+
+SELECT `purchase_order`.`order_id`,`order`.`order_number` FROM `purchase_order` JOIN `order` ON `order`.`id` = `purchase_order`.`order_id` WHERE `order`.`customer_id` = 5704

@@ -1,0 +1,29 @@
+
+                    to do list
+
+                    1. ddl edit inline
+                    2. memperbaiki paginate elipses right arrow
+                    3. buat dashboard
+                    4. menu bar
+                    5. report
+
+                    update history
+                    1 store kasih timeout
+                    2 pada app hilangkan script bunndel yang tidak perlu
+
+                    done,
+sumber belajar:
+VUEX
+https://vuex.vuejs.org/guide/
+https://itnext.io/vuex-made-simple-getting-started-6bf229d432cf
+https://zendev.com/2018/05/21/vuex-perfect-interface-frontend-backend.html
+https://medium.com/vuejs-id/tagged/vuex
+https://nick-basile.com/blog/post/how-to-make-api-calls-with-vuex
+https://www.thepolyglotdeveloper.com/2018/04/vuejs-app-using-axios-vuex/
+https://medium.com/@laurandidi21/understanding-vuex-and-how-it-works-f6372b1ee286
+https://www.youtube.com/watch?v=SaBnaGu7cP8                    
+
+VUE pagination
+https://github.com/TahaSh/vue-paginate
+
+
